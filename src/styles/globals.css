@@ -1,0 +1,100 @@
+html,
+body,
+#__next {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'SF Pro Text',
+    'Inter', sans-serif;
+  background: radial-gradient(circle at top, #1b1030 0, #05030b 55%, #030108 100%);
+  color: #f5f5f5;
+}
+
+.app-root {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  padding: 20px;
+  background: rgba(5, 3, 20, 0.95);
+  border-right: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.sidebar-logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-link {
+  color: #b9b9c9;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.sidebar-link:hover {
+  background: rgba(255, 79, 163, 0.1);
+  color: #ffffff;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  background: linear-gradient(
+    to right,
+    rgba(10, 6, 24, 0.9),
+    rgba(9, 4, 20, 0.85)
+  );
+}
+
+.topbar-title {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.topbar-search {
+  background: rgba(8, 5, 24, 0.9);
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #f5f5f5;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+.app-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background: radial-gradient(circle at top left, #26163c, #13091f 60%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 16px;
+}
